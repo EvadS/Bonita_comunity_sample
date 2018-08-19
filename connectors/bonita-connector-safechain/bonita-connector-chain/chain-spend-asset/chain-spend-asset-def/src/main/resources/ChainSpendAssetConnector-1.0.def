@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>ChainSpendAssetConnector</id>
+  <version>1.0</version>
+  <category id="Safexain"/>
+  <input name="url" type="java.lang.String"/>
+
+
+
+  <input mandatory="true" name="model" type="java.lang.String"/>
+  <input mandatory="true" name="color" type="java.lang.String"/>
+  <input mandatory="true" name="weight" type="java.lang.String"/>
+  <input mandatory="true" name="amount" type="java.lang.Integer"/>
+  <input mandatory="true" name="currency" type="java.lang.String"/>
+
+  <output name="transactionResponse" type="org.bonitasoft.connectors.chain.TransactionResponse"/>
+
+  <page id="client-page">
+    <widget xsi:type="definition:Text" id="url" inputName="url"/>
+  </page>
+
+  <page id="transaction-page">
+    <widget xsi:type="definition:Text" id="model" inputName="model"/>
+    <widget xsi:type="definition:Text" id="color" inputName="color"/>
+    <widget xsi:type="definition:Text" id="weight" inputName="weight"/>
+    <widget xsi:type="definition:Text" id="amount" inputName="amount"/>
+    <widget xsi:type="definition:Text" id="currency" inputName="currency"/>
+  </page>
+</definition:ConnectorDefinition>
