@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>GetAccountConnector-impl</implementationId>
+  <implementationVersion>1.0</implementationVersion>
+  <definitionId>GetAccountConnector</definitionId>
+  <definitionVersion>1.0</definitionVersion>
+  <implementationClassname>org.bonitasoft.connectors.chain.ChainGetAccountConnector</implementationClassname>
+  <hasSources>true</hasSources>
+  <description>The implementation of the JMS Connector.</description>
+
+  <jarDependencies>
+    <jarDependency>get-account-impl-1.0.jar</jarDependency>
+    <jarDependency>json-20180130.jar</jarDependency>
+  </jarDependencies>
+
+</implementation:connectorImplementation>

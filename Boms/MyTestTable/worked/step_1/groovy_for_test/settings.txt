@@ -1,0 +1,5 @@
+my varialbe from bonita 
+
+../API/bpm/activityVariable/{{taskId}}/context
+
+

@@ -1,0 +1,20 @@
+import groovy.json.JsonBuilder;
+
+List<Object> productTable = new ArrayList<Object>();
+
+def jsonb = new JsonBuilder();
+
+def line = jsonb {
+	name ("name 1 ")
+	 serial ("serial 1")}
+productTable.add(line)
+
+
+def line2 = jsonb {
+	name ("name 2")
+	 serial ("serial 2")}
+productTable.add(line2)
+
+return productTable
+
+

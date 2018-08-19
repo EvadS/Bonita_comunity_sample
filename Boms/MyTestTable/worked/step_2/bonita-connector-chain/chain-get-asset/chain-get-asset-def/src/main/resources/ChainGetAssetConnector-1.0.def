@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>ChainGetAssetConnector</id>
+  <version>1.0</version>
+  <category id="Safexain" />
+  <input name="url" type="java.lang.String"/>
+  <output name="asset" type="java.util.List"/>
+
+  <page id="client-page">
+    <widget xsi:type="definition:Text" id="url" inputName="url"/>
+  </page>
+
+</definition:ConnectorDefinition>
